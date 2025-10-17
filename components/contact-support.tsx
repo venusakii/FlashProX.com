@@ -134,7 +134,7 @@ export function ContactSupport() {
               </motion.div>
               <div>
                 <h3 className="font-bold text-lg mb-1">Address</h3>
-                <p className="text-gray-400">Moscow, Russia</p>
+                <p className="text-gray-400">New York</p>
               </div>
             </div>
 
