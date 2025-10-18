@@ -47,9 +47,7 @@ export function VideoReviews() {
 
                 {/* Play button with flash effect */}
                 <motion.div className="absolute inset-0 flex items-center justify-center" whileHover={{ scale: 1.1 }}>
-                  <div className="w-16 h-16 rounded-full bg-[#00C2FF] flex items-center justify-center shadow-[0_0_30px_rgba(0,194,255,0.8)]">
-                    <Play className="w-8 h-8 text-black fill-black ml-1" />
-                  </div>
+                  
                 </motion.div>
               </div>
               <h3 className="text-lg font-bold mt-4 text-center">{video.title}</h3>

@@ -5,10 +5,10 @@ import { useInView } from "framer-motion"
 import { useRef, useState } from "react"
 
 const models = [
-  { brand: "Fenix", lumens: 1600, runtime: "115h", waterproof: "IP68", price: "$89", best: true },
-  { brand: "Olight", lumens: 1200, runtime: "90h", waterproof: "IP68", price: "$79", best: false },
-  { brand: "Nitecore", lumens: 1800, runtime: "100h", waterproof: "IP67", price: "$95", best: false },
-  { brand: "ThruNite", lumens: 1100, runtime: "120h", waterproof: "IP68", price: "$69", best: false },
+  { brand: "Fenix", lumens: 1600, runtime: "115h", waterproof: "IP68", best: true },
+  { brand: "Olight", lumens: 1200, runtime: "90h", waterproof: "IP68", best: false },
+  { brand: "Nitecore", lumens: 1800, runtime: "100h", waterproof: "IP67", best: false },
+  { brand: "ThruNite", lumens: 1100, runtime: "120h", waterproof: "IP68", best: false },
 ]
 
 export function ModelComparison() {
@@ -36,7 +36,6 @@ export function ModelComparison() {
                 <th className="text-left p-4 font-bold text-lg">Lumens</th>
                 <th className="text-left p-4 font-bold text-lg">Runtime</th>
                 <th className="text-left p-4 font-bold text-lg">Protection</th>
-                <th className="text-left p-4 font-bold text-lg">Price</th>
               </tr>
             </thead>
             <tbody>
@@ -75,9 +74,6 @@ export function ModelComparison() {
                   </td>
                   <td className="p-4 relative">
                     <span className="relative z-10">{model.waterproof}</span>
-                  </td>
-                  <td className="p-4 font-bold text-[#00C2FF] relative">
-                    <span className="relative z-10">{model.price}</span>
                   </td>
                 </motion.tr>
               ))}
